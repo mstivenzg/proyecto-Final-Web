@@ -1,0 +1,118 @@
+*{
+	margin: 0;/*margin establece el margen para los cuatro lados*/
+	padding: 0;/*padding establece el espacio de relleno requerido por todos los lados de un elemento.*/
+	box-sizing:border-box;/*PARA QUE TODOS LOS ELEMENTOS TENGAN BORDES iguales*/
+	font-family:Comic Sans MS, Helvetica, sans-serif;/*es la fuente */
+}
+
+label{
+	color:#FFF;
+}
+body{
+	margin: 0;
+    padding: 0;
+	background:url(imagenes/fondo.jpg);
+	background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+a{
+	text-decoration:none;
+}
+
+.fondo{
+	background:url(imagenes/fondo.jpg);
+	height:950px;
+	width:600px;	
+	background-size:cover;
+	animation: movimiento 15s infinite linear alternate;/*movimiento se llama  el efecto*/
+	background-repeat:no-repeat;/*para que la imagen no se repita*/
+	margin:auto;/*para que se centre*/
+}
+@keyframes movimiento{	
+	from{
+		background-position:bottom left;
+	}
+	to{
+		background-position:bottom right;
+	}
+}
+
+h1,footer{
+	padding-top:3px;
+	padding-bottom:3px;
+	width:90%;
+	max-width:1900px;
+	margin: 10px auto;
+	clear: both;/*para que el titulo y el pie de pagina este solos en esa posicion sin nada a los lados*/
+	text-align:center;
+	font-size:30px;	
+	background:rgb(0,0,0,0.5);/*(rojo, verde, azul), donde rojo, verde y azul son números enteros desde 0 a 255. Lo ultimo es la transparencia*/
+	color:#FFF;
+}
+
+h1{
+	text-shadow: 5px 5px 5px F9F506; /*horizontal empezando desde la izquierda a derecha*/
+}
+
+h2{
+	text-align:center;
+	color:#FFF;
+}
+
+form{
+	margin:auto;
+	width:50%;
+	max-width:600px;
+	padding:15px;
+	border: 1px solid rgb(255, 255, 255);
+	height:950px;
+	width:600px;
+}
+
+input{
+	display:block;/*para que quede apilados*/
+	padding: 3px;/*Las propiedades de relleno CSS se utilizan para generar espacio alrededor del contenido de un elemento*/
+	width:100%;/*ocupa el 100% del formulario*/
+	margin: 20px 0;/*30px verticalmente y 0 a los lados*/
+	font-size: 20px;/*para que el boton sea redondo*/
+	margin-bottom:0;
+}
+
+input[type="button"]{/*se refiere a que en este formulario este boton va a enviar datos*/
+	background:linear-gradient(#000000,#999999);/*para el degradado de colores*/
+	color:white;
+	opacity:0.7;
+	cursor:pointer;
+	border-radius:20px;	
+}
+
+input[type="button"]:hover{/*seudoclase o efecto al pasar el mouse*/
+	opacity:1;
+}
+
+input[type="button"]:active{/*efecto al presionar el boton*/
+	transform:scale(0.95);/*se reduce el tamaño*/
+}
+
+@media (max-width:768px){/*Para al ajustar la ventana el tamaño del form sea el 75%*/
+	form{
+		width:75%;
+	}	
+}
+
+@media (max-width:480px){
+	form{
+		width:95%;
+	}	
+}
+	
+footer{
+	margin-top:20px;/*propiedad para que se vaya a la parte de abajo*/
+	font-size:15px;	
+}
+
+ul{
+	list-style:none;/*para quitar los punticos de las listas*/
+}
