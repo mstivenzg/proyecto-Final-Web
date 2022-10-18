@@ -1,0 +1,142 @@
+*{
+	margin: 0;/*margin establece el margen para los cuatro lados*/
+	padding: 0;/*padding establece el espacio de relleno requerido por todos los lados de un elemento.*/
+	box-sizing:border-box;/*PARA QUE TODOS LOS ELEMENTOS TENGAN BORDES iguales*/
+	font-family:Comic Sans MS, Helvetica, sans-serif;
+	color:#FFF;
+}
+h1,h3{
+	text-shadow: 0px 0px 0px F9F506; /*horizontal empezando desde la izquierda a derecha*/
+	text-align:center;
+	font-size:20px;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+body{
+	margin: 0;
+    padding: 0;
+	background:url(../imagenes/Closeup_Microphone_457384.jpg);
+	background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+header{
+	margin:auto;
+	width:1400px;
+	font-family:Comic Sans MS, Helvetica, sans-serif;
+	width:90%;
+	padding-bottom:100;
+}
+
+.center { 
+	margin: 0 auto;	
+	width: 400px;
+}
+
+a:hover{/**/
+	box-shadow: 0px 5px 0px E5F803;
+	text-shadow: 0px 5px 0px E5F803;
+	
+}
+
+a{
+	text-decoration:none;
+	font-size:20px;
+	box-shadow:0px 10px 0px #3B91E;
+	text-shadow: 0px 15px 0px E5F803;
+}
+
+ul{
+	list-style:none;/*para quitar los punticos de las listas*/
+}
+
+ul li a{/*se lee de derecha a izquierda para aplicar el procedimiento*/
+	background-color:#000;
+	color:#fff;
+	text-decoration:none;
+	padding: 10px 15px;
+	display:block;/*para que quede en bloques y no uno encima del otro*/
+	opacity:0.85;
+}
+
+.nav >li {/*para aplicar a los li directos del nav */
+	float:left;/*para que quede cada casilla con su columna correspondiente*/
+	width:33.3333333333333333%;
+	margin: 10px auto;	
+	text-align:center;
+}
+
+.nav li a:hover{/*efecto al pasar el mouse */
+	background-color:#434343;
+}
+ .nav li ul{
+	 display:none;
+	 position:absolute;
+	 min-width:140px;
+	text-align:center;
+	width:30%;
+ }
+ 
+ .nav li:hover>ul{/*que sean directos de ul*/
+	 display:block;
+	 opacity:1;
+ }
+ 
+ .nav li ul li{/*para los submenus de lios submenus*/
+	 position:relative;
+ }
+ 
+ .nav li ul li ul{/*para futuos submenus*/
+	 right:-140px;
+	 top:0px;
+ }
+ 
+ h1,footer{
+	padding-top:3px;
+	padding-bottom:3px;
+	width:90%;
+	max-width:1900px;
+	margin: 10px auto;
+	clear: both;/*para que el titulo y el pie de pagina este solos en esa posicion sin nada a los lados*/
+	text-align:center;
+	font-size:30px;	
+	/*background:rgb(0,0,0,0.5);*(rojo, verde, azul), donde rojo, verde y azul son números enteros desde 0 a 255. Lo ultimo es la transparencia*/
+	color:#FFF;
+	background-color:#000;
+	opacity:0.85;
+}
+
+
+footer{
+	margin-top:5px;/*propiedad para que se vaya a la parte de abajo*/
+	font-size:12px;		
+}
+
+aside{
+	width:28%;
+	float:right;
+	background:black;	
+	height:180px;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-right:80px;
+	margin-left:5px;
+	padding-left:15px;
+	text-align:left;
+	opacity:0.85;
+}
+
+section{
+	width:61%;
+	float:left;
+	text-align:left;
+	background:black;
+	height:180px;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:81px;
+	padding-left:15px;
+	opacity:0.85;
+}

@@ -1,0 +1,252 @@
+/*a,header,head,nav,.contenedor,.principal,article,body, section,aside,#logo{
+	border:1px solid red;	
+	text-decoration: none;	
+}*/
+.content{
+	/*border:1px solid red;	*/
+	background:rgb(0,0,0,0.5);	
+}
+*{
+	font-family:Comic Sans MS;
+	color:#FFF;
+	box-sizing:border-box;
+}
+#enviar{
+	width: 150PX;
+	margin: auto;
+	padding: 0px;
+}
+
+input{
+	display:block;/*para que quede apilados*/
+	padding: 3px;/*Las propiedades de relleno CSS se utilizan para generar espacio alrededor del contenido de un elemento*/
+	width:100%;/*ocupa el 100% del formulario*/
+	margin: 20px 0;/*30px verticalmente y 0 a los lados*/
+	font-size: 20px;/*para que el boton sea redondo*/
+	margin-bottom:0;
+	height:30px;
+}
+
+input[type="button"]{/*se refiere a que en este formulario este boton va a enviar datos*/
+	background:linear-gradient(#000000,#999999);/*para el degradado de colores*/
+	color:white;
+	opacity:0.7;
+	cursor:pointer;
+	border-radius:20px;	
+}
+
+input[type="button"]:hover{/*seudoclase o efecto al pasar el mouse*/
+	opacity:1;
+}
+
+input[type="button"]:active{/*efecto al presionar el boton*/
+	transform:scale(0.95);/*se reduce el tamaño*/
+}
+
+a{
+     text-decoration: none;
+}
+h1,h2,footer,a, p a{
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+a:hover{
+	text-shadow: 1px 1px 2px black, 0 0 45px blue, 0 0 5px darkblue;
+}
+
+h2,h3,a,.lateral,.principal,.articulo,.noticias,label{
+	/*background-color:#000003;		*/
+	text-align:center;	
+	padding:5px;
+	/*background:rgb(0,0,0,0.5);*/
+
+}
+.contenedor{
+	min-width:300px;
+}
+.tab1,.tab2, .tab3, .tab4,.content .tab5{
+	/*background-color:#000003;	*/
+	opacity:0.85;
+	text-align:center;	
+	padding:auto;
+	margin:auto;
+}
+
+h1,.lbl-menu{
+	text-align:center;	
+}
+#titulo{
+	clear: both;
+}
+.content{/**/
+	max-width:1000px;
+	margin-top:100px;
+	position:relative;
+	clear: both;
+	margin:auto;
+}
+
+.contenedor,head,header{
+	width:90%;
+	clear:both;
+	margin:auto;	
+}
+
+.content div{
+	position:absolute;
+	line-height:1.8;
+	transition:all 600ms ease;
+	opacity:0;
+	visibility:hidden;
+	transform:scale(0.90);
+	padding:30px;	
+	padding-bottom:40px;
+}
+
+
+
+
+#radio1,#radio2 ,#radio3,#radio4 ,#radio5{
+	display:none;
+}
+#radio1:checked ~ .tab1,
+#radio2:checked ~ .tab2,
+#radio3:checked ~ .tab3,
+#radio4:checked ~ .tab4,
+#radio5:checked ~ .tab5
+{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.lateral{
+	width:20%;
+	float:left;
+}
+.principal{
+	width:56%;
+	float:left;
+}
+.noticias{
+	width:20%;
+	float:left;
+}
+.lbl-menu label{
+	display:inline-block;
+	padding:20px;/*relleno*/
+	cursor:pointer;/*para que tenga una manito*/
+	transition: all 400ms ease;/*efectua suave*/
+}
+.lbl-menu label:hover{/**/
+	background-color:#03461B;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+body{
+	background:url(../imagenes/fondoMusical.jpg);	
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position: center;
+	margin:0;
+	padding:0;
+	min-height:100vh; 
+	flex-wrap:wrap;
+}
+.tab1,.tab2, .tab3, .tab4, .tab5{
+	margin:auto;
+	width:1000px;
+	
+}
+ul{
+	list-style:none;
+	text-align:center;
+}
+li>a ,lbl-menu{/*para aplicar a los li directos del nav */
+	float:left;/*para que quede cada casilla con su columna correspondiente*/
+	width:18%;
+	margin: 10px auto;	
+	text-align:center;
+}
+lbl-menu label{
+	display:inline-block;
+	padding:15px;
+	color:#fff;
+	cursor:pointer;
+	transition:all 400 ms ease;
+}
+label:hover{
+	background-color:#434343;
+	opacity:0.85;
+}
+li a:hover{/*efecto al pasar el mouse */
+	background-color:#434343;
+}
+
+#perfil,  header img {
+	border-radius:50%;
+	width:10%;
+}
+.noticias img{
+	width:50%;
+	border-radius:10%;
+}
+
+#perfil:hover{
+	transition:2s;
+	transform:rotate(360deg);	
+}
+
+#logo img{
+	float:left;
+}
+
+#logo,ul{
+	width:50%;
+	margin:auto;
+}
+head{
+	position:fixed;
+}
+.principal audio{
+	clear:both;
+}
+img.logotipo{
+	border-radius:50%;
+}
+footer{
+	/*position:fixed;*/	
+	margin-top:5px;/*propiedad para que se vaya a la parte de abajo*/
+	font-size:12px;	
+	padding-top:10px;
+	padding-bottom:3px;
+	width:1000px;
+	max-width:1900px;
+	margin: 10px auto;
+	clear: both;/*para que  este solo en esa posicion sin nada a los lados*/
+	text-align:center;
+	font-size:15px;		
+	color:#FFF;
+	/*background-color:#000;*/
+}
+@media screen and (max-width:800px){
+	aside,article,.principal,footer,.tab1,.tab2,.tab3,.tab4,.tab5,.imagen{
+		width:100%;
+	}
+	#imagen{
+		width:150px;		
+	}
+	body{		
+		background:black;
+		opacity:0.9;
+	}
+	.lateral,.noticias{
+		width:100%;
+	}
+	.principal audio{
+		clear:both;
+	}
+	#perfil{
+		width:100%;
+	}
+}
