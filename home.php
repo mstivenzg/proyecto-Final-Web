@@ -1,15 +1,8 @@
 <?php
-include("connection.php");
-$usuario=$_POST['usuario'];
-
-session_start();
-$_SESSION['usuario']=$usuario;
-$conex=mysqli_connect("localhost","root","","registro");
-$consulta="SELECT * FROM datos WHERE usuario='$usuario' and contraseña='$contraseña'";
-echo $_SESSION['usuario'];
-?>	
-
+	session_start(); 
+?>
 <!doctype html>
+
 <html lang="en">
 <!--<link id="icon" rel="icon" href="imagenes/sol.jpg">-->
 	<head>		
@@ -17,13 +10,15 @@ echo $_SESSION['usuario'];
 		<title>Zona Multimedia</title>
 		<link rel="stylesheet" href="css/estilos.css"> 
 		<link rel="shortcut icon" type="image/x" href="imagenes/bocina.png"><!--para el icono de la pagina-->	
-		<meta name="view" content="width=device-width, user-scalable=no,inicial-scale=1.0,minimum-scale=1.0"><!--para escalar en dispositivos moviles y desplazar hacia rriba o hacia abajo-->
+		<meta name="view" content="width=device-width, user-scalable=no,inicial-scale=1.0,minimum-scale=1.0"><!--para escalar en dispositivos moviles y desplazar hacia rriba o hacia abajo-->		
+		<!--<h2>Bienvenido <?php echo $_SESSION['usuario']?></h2>	-->
+		<h2><a id="salir" href="index.php?vista=logout" class="button is-link is rounded">Salir</a></h2>
 		<div id="logo">
-			<img id="perfil" src="imagenes/botonplay.png" alt="Imagen perfil">			
+			<img id="perfil" src="imagenes/botonplay.png" alt="Imagen perfil">		
 			<h1>Zona Multimedia</h1>			
 		</div>		
 	</head>
-	<body>
+	<body>		
 		<div class="contenedor">
 			<div class="lbl-menu">
 				<label for="radio1">Inicio</label>
@@ -37,16 +32,16 @@ echo $_SESSION['usuario'];
 				<div class="tab1">		
 					<section class="lateral">
 						<aside class="Titulo 1">							
-							<a href="videos.html"><input id="enviar" type="button" value="videos"></a>
+							<a href="videos.php"><input id="enviar" type="button" value="videos"></a>
 							<p>Aqui podrás encontrar escenas de peliculas y series, que realmente atraparan tu atencion, des de escenas comicas hasta las escenas mas tristes que pensaran que es mejor sólo verlas una sola vez en la vida. </p>
 							<p>En este espacio encontras entre varios videos escenas comicas sobre dibujos animados y también escenas de peliculas chistosas como la de las Familia Adams</p>					
 						</aside>
 						<aside class="Titulo 2">
-							<a href="musica.html">Música<input id="enviar" type="button" value="Música"></a>
+							<a href="musica.php">Música<input id="enviar" type="button" value="Música"></a>
 							<p>En este espacio podras encontar imagenes en formate png e img en alta calidad, con tematica de piercing, animes y demás.</p>										
 						</aside>
 						<aside class="Titulo 3">
-							<a href="imagenes.html">Imagenes<input id="enviar" type="button" value="Imagenes"></a>
+							<a href="imagenes.php">Imagenes<input id="enviar" type="button" value="Imagenes"></a>
 							<p>American Horror Story es una serie televisiva de drama y horror creada y producida por Ryan Murphy (Glee) y Brad Falchuk (Nip/Tuck).
 								Se ha descrito como una serie antológica, ya que cada temporada se hace como una miniserie independiente, con un grupo de personajes diferentes, 
 								escenarios distintos y una trama que tiene su propio comienzo, desarrollo y final.</p>	
@@ -207,7 +202,7 @@ echo $_SESSION['usuario'];
 				</div>	
 				<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 				<footer>			
-						<a href="./autor.html">Sobre el autor Michael Stiven Zapata Giraldo</a><br/>
+						<a href="./autor.php">Sobre el autor Michael Stiven Zapata Giraldo</a><br/>
 						mstivenzg@gmail.com</br>
 						<a href="https://www.youtube.com/channel/UCh6qUNn2GQSiDuulMbfYxBw">Canal de YouTube</a><br/>
 						San Javier - Medellín<br/>
