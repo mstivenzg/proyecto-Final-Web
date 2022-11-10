@@ -10,8 +10,8 @@
 	<!-- Referencias de paquetes con etiquetas de diseño-->
 	<link rel="stylesheet" href="css/autor.css">
     <link rel="shortcut icon" type="image/x" href="imagenes/autor.png"><!--para el icono de la pagina-->
-   	<h2>Bienvenido <?php echo $_SESSION['usuario']?></h2>	
-	 <!--<h2><a id="salir" href="index.php?vista=logout" class="button is-link is rounded">Salir</a></h2>-->
+   	<!--<h2>Bienvenido <?php echo $_SESSION['usuario']?></h2>-->	
+	<h2><a id="salir" href="index.php?vista=logout" class="button is-link is rounded">Salir</a></h2>
 </head>
 	<body>
 		<div class="contenedor">
@@ -27,7 +27,7 @@
 					</li>
 					<li><a href="./imagenes.php">Imagenes</a>
 					</li>	
-					<li><a href="./index.php">Inicio</a>
+					<li><a href="./home.php">Inicio</a>
 					</li>			
 				</ul>
 			<br/><br/><br/><br/><br/>
